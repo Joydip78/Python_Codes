@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Public With Propagation</title>
+</head>
+<body>
+    <style>
+        .container {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #000;
+            background-color: #b01515;
+        }
+
+        .childContainer {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #000;            
+            background-color: #4CAF50;
+        }
+
+        .child {
+            color: white;
+            background-color: #110101;
+            margin: 15%;
+            padding: 3px;
+            border: 2px solid #dad4d4;            
+            font-size: 20px;
+        }
+    </style>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">I am child.</div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".container").addEventListener("click", (e)=> {
+            alert("Container clicked!")
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e)=> {
+            alert("childContainer clicked!")
+        })
+
+        a = document.querySelector(".child").addEventListener("click", (e)=> {
+            alert("Child clicked!")
+        })        
+
+        i = 0;
+        function getRandomColor() {
+            return '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+        }
+        a = setInterval(() => {
+            console.log("This is number",i+++" console log message in every 1 seconds.");
+            document.querySelector(".child").style.backgroundColor = i % 2 === 0 ? "#110101" : "#ff0000"; // Change color(between 2 colors) every 2 seconds
+        }, 500);
+        // clearInterval(a)
+
+        a = setTimeout(() => {
+            console.log("This is number",i+++" console log message in every 2 seconds.");
+        // Generate a random color in hex format
+            document.querySelector(".childContainer").style.backgroundColor = getRandomColor(); // Change text color randomly every 2 seconds
+            document.querySelector(".container").style.backgroundColor = getRandomColor(); // Change text color randomly every 2 seconds
+        }, 2000);
+        // clearTimeout(a)
+
+</script>
+</body>
+</html>
