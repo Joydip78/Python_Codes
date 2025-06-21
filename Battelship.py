@@ -3,7 +3,7 @@ import random
 # Constants
 BOARD_SIZE = 5
 NUM_SHIPS = 3
-MAX_TURNS = 1
+MAX_TURNS = 10
 
 # Initialize board
 def create_board():
