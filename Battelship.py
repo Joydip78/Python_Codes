@@ -3,7 +3,7 @@ import random
 # Constants
 BOARD_SIZE = 5
 NUM_SHIPS = 3
-MAX_TURNS = 10
+MAX_TURNS = 1
 
 # Initialize board
 def create_board():
@@ -22,15 +22,16 @@ def print_board(board, hide_ships=False):
         print(f"{i} " + " ".join(display_row))
 
 # Place ships randomly
-def place_ships(board):
-    ships = []
-    while len(ships) < NUM_SHIPS:
+def place_ships():
+    board = create_board()
+    c = 0
+    while c < NUM_SHIPS:
         row = random.randint(0, BOARD_SIZE - 1)
         col = random.randint(0, BOARD_SIZE - 1)
         if board[row][col] != "S":
             board[row][col] = "S"
-            ships.append((row, col))
-    return ships
+            c += 1
+    return board
 
 # Main game loop
 def play_game():
@@ -38,8 +39,7 @@ def play_game():
     print(f"Try to sink all {NUM_SHIPS} enemy ships in {MAX_TURNS} turns!\n")
 
     board = create_board()
-    hidden_board = create_board()
-    ships = place_ships(hidden_board)
+    hidden_board = place_ships()
 
     turns = 0
     hits = 0
