@@ -1,6 +1,6 @@
 def lengthOfLongestSubstring(s):
     sCopy = ""
-    print("length")
+    print("length : ")
     c = 0
     if s != "":
         cC = 0
