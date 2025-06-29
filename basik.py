@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 model = []
 
-@app.get('/friend')
+@app.get('/friends')
 def get_friends():
     return model
 
