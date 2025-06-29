@@ -7,7 +7,7 @@ NUM_SHIPS = 3
 class BattleshipGame:
     def __init__(self, master):
         self.master = master
-        master.title("Battleship - Multiplayer")
+        master.title("Battleship - Multiplayer GUI")
 
         self.turn = 0  # 0 for Player 1, 1 for Player 2
         self.phase = "setup"  # setup or play
@@ -39,7 +39,7 @@ class BattleshipGame:
                     row.append(btn)
                 self.grid_buttons[p].append(row)
 
-        self.reset_btn = tk.Button(master, text="Reset Game", command=self.reset_game)
+        self.reset_btn = tk.Button(master, text="Reset The Game", command=self.reset_game)
         self.reset_btn.pack(pady=5)
 
     def cell_clicked(self, player, row, col):
