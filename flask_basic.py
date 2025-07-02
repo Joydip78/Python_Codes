@@ -26,8 +26,7 @@ def armstrong(n):
         print(f"{copy_n} is not an armstrong number")
         result = {
             "number" : copy_n,
-            "isArmstrong" : False,
-            "list" : [0,1,2,3,4,5,6,7,8,9]
+            "isArmstrong" : False
         }
     return jsonify(result)
 

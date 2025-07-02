@@ -51,7 +51,7 @@ def play_game():
             col = int(input("Enter column (0–4): "))
 
             if not (0 <= row < BOARD_SIZE and 0 <= col < BOARD_SIZE):
-                print("⚠️ Invalid input. Coordinates out of range.")
+                print("⚠️ Invalid input. Provided Coordinate is out of range.")
                 continue
 
             if board[row][col] in ["X", "O"]:
