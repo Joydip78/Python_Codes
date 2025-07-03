@@ -1,6 +1,6 @@
 # Replace all ______ with rjust, ljust or center.
 
-thickness = int(input())  # Must be an odd number
+thickness = int(input())  # Should be an odd number
 c = 'H'
 
 # Top Cone
