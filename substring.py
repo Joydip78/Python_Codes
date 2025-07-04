@@ -30,5 +30,7 @@ s = "bbbbbbb"
 print(lengthOfLongestSubstring(s))
 s = ""
 print(lengthOfLongestSubstring(s))
+s = "ababcabcdea"
+print(lengthOfLongestSubstring(s))
 s = "dvdf"
 print(lengthOfLongestSubstring(s))
