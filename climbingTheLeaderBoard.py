@@ -23,6 +23,7 @@ def climbingLeaderboard(ranked, player):
 
 
 if __name__ == '__main__':
+    #create a output file
     fptr = open('output.txt', 'w')
     ranked_count = int(input().strip())
 
