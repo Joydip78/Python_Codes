@@ -1,6 +1,6 @@
 def countingSort(arr):
-    # values are in range 0-99
-    count = [0] * 100  
+    
+    count = [0] * 100  # values are in range 0-99
     for num in arr:
         count[num] += 1
     return count
