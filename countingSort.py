@@ -5,8 +5,7 @@ def countingSort(arr):
         count[num] += 1
     return count
 
-# Read input
-n = int(input())
+n = int(input()) # Read input
 arr = list(map(int, input().strip().split()))
 
 # Process and print
