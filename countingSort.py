@@ -8,6 +8,6 @@ def countingSort(arr):
 n = int(input()) # Read input
 arr = list(map(int, input().strip().split()))
 
-# Process and print
-result = countingSort(arr)
+
+result = countingSort(arr) # Process and print
 print(' '.join(map(str, result)))
