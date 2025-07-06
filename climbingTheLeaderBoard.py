@@ -18,11 +18,12 @@ def climbingLeaderboard(ranked, player):
     for score in player:
         while index >= 0 and score >= ranked[index]:
             index -= 1
-        result.append(index + 2)  # Rank is index+2 due to 0-based indexing
+        result.append(index + 2)  # Rank is index+2 (due to 0-based indexing)
     return result
 
 
 if __name__ == '__main__':
+    #create a output file
     fptr = open('output.txt', 'w')
     ranked_count = int(input().strip())
 
