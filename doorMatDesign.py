@@ -1,6 +1,6 @@
 n, m = map(int, input().split())
 
-# Top half
+# Top half of the pattern 
 for i in range(1, n, 2):
     pattern = ('.|.' * i).center(m, '-')
     print(pattern)
