@@ -8,7 +8,7 @@ for i in range(1, n, 2):
 # Center of the pattern 
 print('WELCOME'.center(m, '-'))
 
-# Bottom half
+# Bottom half of the pattern 
 for i in range(n-2, 0, -2):
     pattern = ('.|.' * i).center(m, '-')
     print(pattern)
