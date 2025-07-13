@@ -1,7 +1,7 @@
 import random
 
 # Constants
-BOARD_SIZE = 5
+BOARD_SIZE = 6
 NUM_SHIPS = 2
 MAX_TURNS = 10
 
