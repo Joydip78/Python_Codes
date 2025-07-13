@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-BOARD_SIZE = 5
+BOARD_SIZE = 6
 NUM_SHIPS = 3
 
 class BattleshipGame:
