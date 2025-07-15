@@ -9,5 +9,5 @@ n = int(input()) # Read input
 arr = list(map(int, input().strip().split()))
 
 
-result = countingSort(arr) # Process and print
+result = countingSort(arr) # Process and store
 print(' '.join(map(str, result)))
