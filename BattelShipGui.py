@@ -7,7 +7,7 @@ NUM_SHIPS = 3
 class BattleshipGame:
     def __init__(self, master):
         self.master = master
-        master.title("Battleship - Multiplayer GUI")
+        master.title("Battleship Game - Multiplayer GUI")
 
         self.turn = 0  # 0 for Player 1, 1 for Player 2
         self.phase = "setup"  # setup or play
