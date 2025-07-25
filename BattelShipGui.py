@@ -49,7 +49,7 @@ class BattleshipGame:
                 return
 
             if self.player_boards[player][row][col] == "S":
-                messagebox.showwarning("Already placed here", "You already placed a ship here.")
+                messagebox.showwarning("Already placed ship here", "You already placed a ship here.")
                 return
 
             self.player_boards[player][row][col] = "S"
