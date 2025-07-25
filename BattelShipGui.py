@@ -10,7 +10,7 @@ class BattleshipGame:
         master.title("Battleship Game - Multiplayer GUI")
 
         self.turn = 0  # 0 for Player 1, 1 for Player 2
-        self.phase = "setup"  # setup or play
+        self.phase = "setup"  # setup or play the game 
 
         self.player_boards = [[["~"] * BOARD_SIZE for _ in range(BOARD_SIZE)] for _ in range(2)]
         self.ship_counts = [0, 0]
