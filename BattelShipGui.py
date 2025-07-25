@@ -59,7 +59,7 @@ class BattleshipGame:
             if self.ship_counts[player] == NUM_SHIPS:
                 if self.turn == 0:
                     self.turn = 1
-                    self.status.config(text="Player 2: Place your 3 ships")
+                    self.status.config(text="Player 2: Place your ships")
                 else:
                     self.phase = "play"
                     self.turn = 0
