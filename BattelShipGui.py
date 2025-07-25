@@ -78,7 +78,7 @@ class BattleshipGame:
             if self.player_boards[player][row][col] == "S":
                 self.grid_buttons[player][row][col].config(text="X", bg="red")
                 self.player_boards[player][row][col] = "X"
-                self.status.config(text=f"🔥 Hit! Player {self.turn + 1} go again!")
+                self.status.config(text=f"🔥 It's Hit! Player {self.turn + 1} go again!")
             else:
                 self.grid_buttons[player][row][col].config(text="O", bg="blue")
                 self.player_boards[player][row][col] = "O"
