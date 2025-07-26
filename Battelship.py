@@ -44,7 +44,7 @@ def play_game():
     turns = 0
     hits = 0
 
-    while turns < MAX_TURNS and hits < NUM_SHIPS:
+    while turns <= MAX_TURNS and hits < NUM_SHIPS:
         print_board(board)
         try:
             row = int(input("\nEnter row (0–4): "))
