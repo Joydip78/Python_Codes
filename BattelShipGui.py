@@ -39,7 +39,7 @@ class BattleshipGame:
                     row.append(btn)
                 self.grid_buttons[p].append(row)
 
-        self.reset_btn = tk.Button(master, text="Reset The Game", command=self.reset_game)
+        self.reset_btn = tk.Button(master, text="Reset Game", command=self.reset_game)
         self.reset_btn.pack(pady=5)
 
     def cell_clicked(self, player, row, col):
