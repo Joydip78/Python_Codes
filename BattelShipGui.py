@@ -45,7 +45,7 @@ class BattleshipGame:
     def cell_clicked(self, player, row, col):
         if self.phase == "setup":
             if player != self.turn:
-                messagebox.showinfo("Wait!", f"Player {self.turn + 1}, it's your turn to place.")
+                messagebox.showinfo("Wait!", f"Player {self.turn + 1}, it's your turn to place ship.")
                 return
 
             if self.player_boards[player][row][col] == "S":
